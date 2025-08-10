@@ -1,6 +1,6 @@
-# Java OOP Concepts – Interview Preparation 🚀
+# Java OOP Concepts
 
-This repository contains Java programs and notes to prepare for **Java OOP (Object-Oriented Programming)** interviews, from **beginner** to **advanced**.
+This repository contains Java programs and notes to prepare for **Java OOP (Object-Oriented Programming)** , from **beginner** to **advanced**.
 
 ---
 
@@ -51,7 +51,7 @@ This repository contains Java programs and notes to prepare for **Java OOP (Obje
 ---
 You will learn all these topics through practically by following the Notes.txt file.
 ### Check out Notes.txt file
--- 
+---
 
 ## 🐦 Real-World Example – Airport Bird Tracking System
 
@@ -65,6 +65,8 @@ We built a Java program to simulate an **airport wildlife monitoring system** th
 - `static nested class` for shared helper methods
 - Inner class for modeling bird parts (e.g., wings)
 - Method overriding (`toString`, `equals`, `hashCode`)
+
+** For this practical implementation, please check out the AllInProgram.java in the folder **
 
 ---
 
