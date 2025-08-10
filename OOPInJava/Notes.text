@@ -1,0 +1,83 @@
+# Introduction to JAVA OOP
+
+
+### Different types of Erros:
+
+```
+    | Error Type     | When Detected    | Cause                                  | Result                            |
+    | -------------- | ---------------- | -------------------------------------- | --------------------------------- |
+    | Syntax Error   | Compile time     | Invalid language syntax                | Compilation fails                 |
+    | Semantic Error | Usually run time | Incorrect code logic                   | Wrong output                      |
+    | Runtime Error  | Run time         | Illegal operations like divide by zero | Program crashes/throws exceptions |
+    | Logical Error  | Run time/testing | Wrong program logic but valid syntax   | Wrong output, no crash            |
+
+```
+
+### Follow this programs to learn JAVA OOP
+
+1. BasicOfClass
+2. Constructor
+3. ConstructorChaining
+4. Access Modifier
+
+   ```
+    | Modifier                | Within Class | Within Package | Subclass (same package) | Subclass (different pkg) | Anywhere |
+    | ----------------------- | ------------ | -------------- | ----------------------- | ------------------------ | -------- |
+    | `private`               | Yes          | No             | No                      | No                       | No       |
+    | *default* (no modifier) | Yes          | Yes            | Yes                     | No                       | No       |
+    | `protected`             | Yes          | Yes            | Yes                     | Yes                      | No       |
+    | `public`                | Yes          | Yes            | Yes                     | Yes                      | Yes      |
+    
+  ```
+5. InheritanceDemo
+
+```
+    package pkg1;
+
+    public class Parent {
+        private int privateVar = 1;
+        int defaultVar = 2;       // package-private
+        protected int protectedVar = 3;
+        public int publicVar = 4;
+    }
+
+    package pkg1;
+
+    public class Child extends Parent {
+        void testAccess() {
+            // privateVar → NOT accessible
+            System.out.println(defaultVar);       // accessible (same package)
+            System.out.println(protectedVar);     // accessible (subclass)
+            System.out.println(publicVar);        // accessible
+        }
+    }
+
+    package pkg2;
+
+    import pkg1.Parent;
+
+    public class AnotherChild extends Parent {
+        void testAccess() {
+            // privateVar → NO
+            // defaultVar → NO (different package)
+            System.out.println(protectedVar);     // accessible (protected)
+            System.out.println(publicVar);        // accessible
+        }
+    }
+
+```
+6. Polymorphism
+    a. MethodOverloadingDemo
+    b. MethodOverridingDemo
+
+7. EncapsulationDemo
+8. Abstraction
+    a. AbstractionDemo
+    b. InterfaceDemo
+
+### To understand all the concepts , check the AllInProgram
+
+    -> here you can witness the use of the oops and how they will helpful.
+
+
+
