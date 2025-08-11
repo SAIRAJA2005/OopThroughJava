@@ -6,8 +6,6 @@
  */
 
 
-
-
 class Calculator{
     // Method overloading: same method name with different parameter types
     int add(int a, int b){
@@ -34,3 +32,4 @@ public class MethodOverloadingDemo {
         System.out.println(cal.add("Hello, ", "World!"));
     }
 }
+
