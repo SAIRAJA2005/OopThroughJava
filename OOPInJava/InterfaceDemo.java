@@ -1,8 +1,13 @@
 /*
     * This file is part of the Java Programming Course.
-
+    * Why interfaces?
+    * Interfaces allow us to define a contract that classes can implement.
+    * This enables polymorphism, where we can treat different classes uniformly as long as they implement the same interface.
+    * Interfaces can contain abstract methods (without a body) and constants.
+    * But from Java 8 onwards, they can also contain default methods (with a body) and static methods.
+    * Classes that implement an interface must provide concrete implementations for all of its abstract methods.
+    
  */
-
 
  interface Animal {
     // Abstract method to be implemented by subclasses
@@ -68,3 +73,4 @@ public class InterfaceDemo {
 
     }
 }
+
